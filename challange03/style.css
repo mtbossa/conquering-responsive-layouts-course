@@ -1,8 +1,8 @@
 /* Roboto Regular */
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Regular.ttf');
-  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,8 +10,8 @@
 /* Roboto Bold */
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Bold.ttf');
-  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -19,16 +19,16 @@
 /* Roboto Black */
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Black.ttf');
-  src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+  src: url("../fonts/Roboto/Roboto-Black.ttf");
+  src: url("../fonts/Roboto/Roboto-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 :root {
-  --color-dark-green: #23424A;
-  --color-green: #136C72;
-  --color-light-green: #38CFD9;
+  --color-dark-green: #23424a;
+  --color-green: #136c72;
+  --color-light-green: #38cfd9;
 }
 
 * {
@@ -40,7 +40,7 @@ body {
   margin: 0;
 
   color: white;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .bold {
@@ -52,9 +52,30 @@ body {
 }
 
 .background {
-background-color: var(--color-dark-green);
+  background-color: var(--color-dark-green);
+
+  padding-block: 2rem;
 }
 
 a {
+  display: inline-block;
   color: var(--color-dark-green);
+  background-color: var(--color-light-green);
+  padding: 1rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container > p {
+  width: 50%;
+}
+
+.test {
+  margin-bottom: 2rem;
 }
