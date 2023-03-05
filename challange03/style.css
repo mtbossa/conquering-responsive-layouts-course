@@ -1,47 +1,60 @@
-/* INSTRUCTIONS
- *
- * 1) Keep the text inside .intro-content
- *    in the same place, but have the background
- *    extend from one side of the viewport
- *    to the other, no matter how wide or narrow
- *    the browser is.
- *
- * 2) Limit the maximum width of the text in the
- *    bottom area.
- *
- * You may modify the HTML if needed
- * (you probably should for this challenge)
- *
- */
+/* Roboto Regular */
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+  src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Roboto Bold */
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Roboto Black */
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Black.ttf');
+  src: url('../fonts/Roboto/Roboto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --color-dark-green: #23424A;
+  --color-green: #136C72;
+  --color-light-green: #38CFD9;
+}
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
-}
 
-.container {
-  background: #23424a;
   color: white;
-  padding: 50px 0;
+  font-family: 'Roboto';
 }
 
-.intro-content {
-  width: 50%;
+.bold {
+  font-weight: bold;
 }
 
-.intro-content > div {
-  width: 50%;
+.black {
+  font-weight: 900;
 }
 
-.locked {
-  width: 80%;
-  max-width: 750px;
+.background {
+background-color: var(--color-dark-green);
 }
 
-.centered {
-  margin: 0 auto;
+a {
+  color: var(--color-dark-green);
 }
